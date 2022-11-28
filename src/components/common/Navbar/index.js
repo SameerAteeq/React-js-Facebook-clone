@@ -48,7 +48,7 @@ export default function Navbar() {
                 <Toolbar sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 
                     <Stack flex={"5"} direction={"row"} alignItems="center" gap="10px">
-                        <img src='../../../../assets/images/fblogo.png' width={"50px"} height={"50px"} />
+                        <img onClick={() => navigate("/")} src='../../../../assets/images/fblogo.png' width={"50px"} height={"50px"} style={{ cursor: "pointer" }} />
                         <Search sx={{ display: { xs: "block", xl: "none" }, fontSize: "35px" }} />
                         <Box sx={{ display: { xs: "none", xl: "block" } }} >
                             <FilledInput

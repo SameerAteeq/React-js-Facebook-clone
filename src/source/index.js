@@ -127,37 +127,52 @@ export const fakeUsers = [
     {
         id: 1,
         name: "Muhammad Rizwan ",
-        imgUrl: "https://images.unsplash.com/photo-1610088441520-4352457e7095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        imgUrl: "https://images.unsplash.com/photo-1610088441520-4352457e7095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        work: "Former Shopkeeper at Super Market",
+        studied: "Studied at Technological University of the Philippines"
     },
     {
         id: 2,
         name: "Muhammad Shariq",
-        imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNtq1DC1ezyLmT4L0DDz2Z-jBOiQIhZtEHiRM0-HmMMFdgJFvc7EKdDmdGevVCXvnOjh8&usqp=CAU"
+        imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNtq1DC1ezyLmT4L0DDz2Z-jBOiQIhZtEHiRM0-HmMMFdgJFvc7EKdDmdGevVCXvnOjh8&usqp=CAU",
+        work: "Software engineer at Inciter Tech",
+        studied: "Studied at Technological University of the Philippines"
     },
     {
         id: 3,
         name: "Waqas Ameen",
-        imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjb-Jsep9tAcYMGcwnDZl9MuXwtJ87LMh-KkFZT04M9XQRs6I0mWi4GJcUD7bTPEOAXRU&usqp=CAU"
+        imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjb-Jsep9tAcYMGcwnDZl9MuXwtJ87LMh-KkFZT04M9XQRs6I0mWi4GJcUD7bTPEOAXRU&usqp=CAU",
+        work: "Shop owner at Express Mall of Dubai",
+        studied: "Studied at Technological University of the Philippines"
     },
     {
         id: 4,
         name: "Huzaifa Sheikh",
-        imgUrl: "https://images.unsplash.com/flagged/photo-1573740144655-bbb6e88fb18a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        imgUrl: "https://images.unsplash.com/flagged/photo-1573740144655-bbb6e88fb18a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        work: "Software engineer at Inciter Tech",
+        studied: "Studied at Technological University of the Philippines"
     },
     {
         id: 5,
         name: "Hamza Ahmed",
-        imgUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        imgUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        work: "Software engineer at Inciter Tech",
+        studied: "Studied at Technological University of the Philippines"
     },
+
     {
         id: 6,
         name: "Muhammad Hassan",
-        imgUrl: "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        imgUrl: "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        work: "Software engineer at Inciter Tech",
+        studied: "Studied BSCS at Oxford University "
     },
     {
         id: 7,
         name: "Ahsan Jamal Bhatti",
-        imgUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        imgUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        work: "Software engineer at Inciter Tech",
+        studied: "Studied at Technological University of the Philippines"
     },
 ]
 
@@ -297,31 +312,37 @@ export const UserLinks = [
     {
         id: 1,
         name: "Posts",
-        link: "post"
+        link: "post",
+        active: true,
     },
     {
         id: 2,
         name: "About",
-        link: "about"
+        link: "about",
+        active: true,
     },
     {
         id: 3,
         name: "Friends",
-        link: "friends"
+        link: "friends",
+        active: true,
     },
     {
         id: 4,
         name: "Photos",
-        link: "photos"
+        link: "photos",
+        active: true,
     },
     {
         id: 5,
         name: "Videos",
-        link: "photos"
+        link: "photos",
+        active: true,
     },
     {
         id: 6,
         name: "Check-in",
-        link: "photos"
-    },
+        link: "photos",
+        active: true,
+    }
 ]

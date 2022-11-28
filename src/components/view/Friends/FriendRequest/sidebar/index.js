@@ -27,7 +27,7 @@ const Sidebar = () => {
                     <ListItem>
                         <Stack flexDirection="column" sx={{ width: "100%" }} >
                             {fakeUsers?.slice(0, 3)?.map(item => (
-                                <div key={item.id} onClick={() => navigate(`/friends/request/${item.id}`)}>
+                                <div key={item.id} onClick={() => navigate(`/friends/request/${item.id}/post`)}>
                                     <Stack flexDirection="row" gap="10px" sx={{ padding: "8px", "&:hover": { backgroundColor: "#dfe1ee", borderRadius: "10px" }, cursor: "pointer", fontSize: "24px", width: "100%" }}>
                                         <img src={item?.imgUrl} width="50px" height="50px" style={{ borderRadius: "50%" }} />
                                         <Stack flexDirection="column" >

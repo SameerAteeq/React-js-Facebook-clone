@@ -1,11 +1,13 @@
 import { Box, Grid } from '@mui/material'
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useParams } from 'react-router-dom'
 import Home from '../../Home'
 import Content from './content'
 import Sidebar from './sidebar'
 
 const FriendRequest = () => {
+    const { tab } = useParams();
+    console.log("tab", tab)
     return (
         <Box sx={{ height: "100%", mt: 8 }}>
             {/* <Grid container >

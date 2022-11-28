@@ -67,7 +67,7 @@ const FriendsContent = () => {
                             height="230"
                             image={item?.imgUrl}
                             sx={{ cursor: "pointer" }}
-                            onClick={() => navigate(`/friends/request/${item.id}`)}
+                            onClick={() => navigate(`/friends/request/${item.id}/post`)}
                         />
                         <CardContent sx={{ overflowX: "hidden", width: "100%" }}>
                             <Typography variant='h6' component="div" sx={{ fontSize: "18px", width: "100%", overflowX: "hidden", }}>

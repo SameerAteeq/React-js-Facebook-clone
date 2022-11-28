@@ -20,8 +20,7 @@ const Pages = () => {
                     <Route path='/friends' element={<Friends />} />
                     <Route path='/friends/request/:id' element={<FriendRequest />} />
                     <Route path='/friends/request/:id/:tab' element={<FriendRequest />} />
-                    {/* <Route path='/friends/request/:id/about' element={<FriendRequest />} /> */}
-                    {/* <Route path='/friends/request/:id/friends' element={<FriendRequest />} /> */}
+                    <Route path='/friends/:id/:tab' element={<Content />} />
                     <Route path='/friends/request' element={<FriendRequest />} />
                     <Route path='/watch' element={<Watch />} />
                     <Route path='/marketplace' element={<MarketPlace />} />

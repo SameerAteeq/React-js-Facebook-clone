@@ -1,10 +1,11 @@
 import { Call, Close, EmojiEmotions, Send, Videocam } from '@mui/icons-material';
 import { Box, FilledInput, IconButton, InputAdornment, Popover, Popper, Stack, TextField, Tooltip, Typography } from '@mui/material';
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { messengerChat } from '../../../source';
 
 const ChatsPopper = ({ anchorEl, setAnchorEl, userId }) => {
-
+    const navigate = useNavigate();
     const handleClose = () => {
         setAnchorEl(null);
     };
@@ -25,7 +26,7 @@ const ChatsPopper = ({ anchorEl, setAnchorEl, userId }) => {
                 <Stack direction="row" justifyContent="space-between" sx={{ backgroundColor: "#f7f7f7", padding: "8px" }}>
                     <Stack direction="row" justifyContent="space-between" alignItems="center" gap="10px">
                         <img src={userId?.imgUrl} alt='usrer-img' width="30px" height="30px" style={{ borderRadius: "50%" }} />
-                        <Typography variant='p' sx={{ fontSize: "15px", color: "#333" }}>{userId?.name}</Typography>
+                        <Typography onClick={() => navigate(`/friends/${userId?.id}/post`)} variant='p' sx={{ fontSize: "15px", color: "#333" }}>{userId?.name}</Typography>
                     </Stack>
                     <Stack direction="row" justifyContent="space-between">
                         <IconButton>

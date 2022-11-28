@@ -15,11 +15,11 @@ const UserProfilePost = ({ user }) => {
                         <Typography variant='h6'>Intro</Typography>
                         <Stack direction="row" alignItems="center" gap="10px" mb="8px" >
                             <Work sx={{ color: "gray" }} />
-                            <Typography variant="body2" sx={{ color: "#333" }}>in mall</Typography>
+                            <Typography variant="body2" sx={{ color: "#333" }}>{user.work}</Typography>
                         </Stack>
                         <Stack direction="row" alignItems="center" gap="10px" mb="8px">
                             <School sx={{ color: "gray" }} />
-                            <Typography variant="body2">in mall</Typography>
+                            <Typography variant="body2">{user.studied}</Typography>
                         </Stack>
                         <Stack direction="row" alignItems="center" gap="10px" mb="8px">
                             <Home sx={{ color: "gray" }} />

@@ -1,5 +1,5 @@
 import { Message, MoreHoriz, Share, ThumbUp } from '@mui/icons-material'
-import { Avatar, Card, CardActions, CardContent, CardHeader, CardMedia, IconButton, Stack, Typography } from '@mui/material'
+import { Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, IconButton, Stack, Typography } from '@mui/material'
 import { red } from '@mui/material/colors'
 import React from 'react'
 import { useParams } from 'react-router-dom'
@@ -30,10 +30,10 @@ const UserProfilePicture = ({ user }) => {
                 </CardContent>
                 <CardMedia
                     component="img"
-                    height="350"
+                    height="100%"
                     image={user.imgUrl}
                     alt="user-image"
-                    sx={{ objectFit: "inherit", backgroundPosition: "center" }}
+                    sx={{ width: "100%", objectFit: "contain", backgroundPosition: "center" }}
                 />
                 <CardActions disableSpacing>
                     <Stack width={"100%"} direction={"row"} justifyContent="space-between" sx={{ borderBottom: "1px solid gray", borderTop: "1px solid gray", mt: "20px", mb: "20px" }}>
@@ -71,7 +71,7 @@ const UserProfilePicture = ({ user }) => {
                 </CardContent>
                 <CardMedia
                     component="img"
-                    height="350"
+                    height="100%"
                     image={user.imgUrl}
                     alt="user-image"
                     sx={{ objectFit: "inherit", backgroundPosition: "center" }}
